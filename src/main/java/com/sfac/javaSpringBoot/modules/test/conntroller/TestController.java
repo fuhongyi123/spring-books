@@ -12,6 +12,6 @@ public class TestController {
     @GetMapping("/testdesc")
     @ResponseBody
     public String testDemo(){
-        return "Tis is test module desc";
+        return "Tis is te st module desc";
     }
 }
