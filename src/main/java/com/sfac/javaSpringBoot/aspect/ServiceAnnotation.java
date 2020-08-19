@@ -1,0 +1,11 @@
+package com.sfac.javaSpringBoot.aspect;
+
+import java.lang.annotation.*;
+
+//用注解来实现aop
+@Target(ElementType.METHOD)
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ServiceAnnotation {
+    String value() default "aaa";
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+        lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>***  Manager System</title>
+    <!-- 引入css -->
+    <!-- <link th:href="@{http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css}" rel="stylesheet" > -->
+    <!-- <link th:href="${'/css/sbDemo.css'}" rel="stylesheet" /> -->
+    <!-- 引入内部js -->
+    <script th:src="${'/js/jquery.min.js'}" type="text/javascript"></script>
+    <!-- layer -->
+    <script th:src="@{https://cdn.bootcss.com/layer/2.1/layer.js}"
+            type="text/javascript"></script>
+</head>
+<body>
+  <!--  <&#45;&#45;引入碎片文件 footer  header sidebar    &ndash;&gt;-->
+   <div th:replace="fragements/header"></div>
+    <div th:replace="fragements/sidebar"></div>
+     <div th:replace="fragements/footer"></div>
+
+   <div th:if="${template}">
+        <div th:replace="${template}"></div>
+    </div>
+</body>
+</html>
