@@ -1,0 +1,85 @@
+一，选择题
+	以下哪个不是python解释器   D
+		CPython
+		IPython
+		Jython
+		py
+	下列哪个表达式在Python中是非法的？B
+		x = y = z = 1
+		x = (y = z + 1)
+		x, y = y, x
+		x += y
+	print("%d %% %d"%(3, 5)) 输出结果是？A
+		3 % 5
+		3 %% 5
+		2
+		1
+	“今年第一季度GDP提高了x%”，x为float值，格式化字符串，x保留两位小数，下面哪个是正确的？
+		print("今年第一季度GDP提高了%.2f"%(22.234,))
+		print("今年第一季度GDP提高了%.2f%"%(22.234,))
+		print("今年第一季度GDP提高了%.2f%%"%(22.234,))
+		print("今年第一季度GDP提高了{0}%".format(22.234))
+	l = ["cdsa", 32, 33.2, None, True];l.pop();print(l);打印结果是：C
+		["cdsa", 32, 33.2, True]
+		["cdsa", 32, None, True]
+		["cdsa", 32, 33.2, None]
+		[32, 33.2, None, True]
+	print(15 // 2);B
+		1
+		7
+		7.5
+		8
+	下面哪个不是 python 的数据类型D
+		int
+		str
+		set
+		double
+	*args 代表什么参数B
+		位置参数
+		可变参数
+		可变关键字参数
+		命名关键字参数
+	函数多个返回值，实际上返回的是什么数据类型？C
+		list
+		set
+		tuple
+		dict
+	安装Django2.0.7版本，使用的什么命令？A
+		pip install django
+		pip install django=2.0.7
+		pip install django==2.0.7
+		pip install django version=2.0.7
+
+二、填空题
+	字符串前面贴加u r b代表什么？
+                       u代表字符串是以Unicode编码     r代表后面字符串是普通字符串  u后面是bytes 
+	
+                 requests模块请求远程服务器，如何设置相应编码？
+          
+	windows下执行python的方式；
+	创建python package，会自动生成什么文件？
+                         __init__.py
+	python变量作用域有哪些？
+                     1---局部作用域   2---闭包函数外的函数中  3--全局作用域  4--内建作用域
+
+三、问答题
+	python命名规则？
+                     字母 数字 下划线 但是不能以字母作为开头；不能是python关键字，但可以包含关键字
+	set删除操作中，pop、remove的区别？
+                      pop是删除数组中最后一个元素  而remove要指定下标
+	list使用+=和append函数的区别？
+                   list使用+=是添加到列表后面      append是以整个集合添加到后面  
+	使用bs4解析响应内容，获取某div（class为aaa）下所有span节点；
+	
+                     简述Django操作流程、组件的作用；
+                       用户通过浏览器向我们的服务器发起一个请求（request），这个请求会去访问视图函数，
+                       如果不涉及到数据调用，那么视图函数直接返回一个模板（页面）给用户，反之，
+                       视图函数调用模型进行数据处理，并填充到模版中返回给用户；
+                        视图：  URL映射
+                        表单：通过内置的数据类型和控件生成 HTML 表单
+	        Model：提供数据访问接口和模块，包括数据字段、元数据、数据关系等的定义及操作
+                        管理站：声明需要管理的 Model，快速生成后台数据管理网站
+
+四、编程题
+	定义一个函数，接受 0 个或多个函数，返回累计乘积；
+	定义一个函数，去掉字符串前后的空格；
